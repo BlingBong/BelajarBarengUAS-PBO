@@ -15,7 +15,7 @@ public class ThreadHello implements Runnable {
     public void run() {
         System.out.println(name + ": Hello");
         try {
-            Thread.sleep(250);
+            Thread.sleep(250); //delay
         } catch (InterruptedException ex) {
             Logger.getLogger(ThreadHello.class.getName()).log(Level.SEVERE, null, ex);
         }
